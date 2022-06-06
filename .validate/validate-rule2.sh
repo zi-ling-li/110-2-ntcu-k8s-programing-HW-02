@@ -37,7 +37,7 @@ done
 cid=`docker ps -f name=control-plane -q`
 
 
-nodeport=`kubectl get svc  -l ntcu-k8s=hw2  -o jsonpath='{.items[0].spec.ports[0].nodePort}'`
+nodeport=`kubectl get svc  -l ${LABEL}  -o jsonpath='{.items[0].spec.ports[0].nodePort}'`
 
 for i in {1..20}; do
 
