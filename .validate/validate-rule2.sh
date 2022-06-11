@@ -29,7 +29,14 @@ for i in {1..60}; do
 	if [ "$ready" == "true" ]; then
 		break
 	fi
-    echo "deployment ${deployment} not ready, sleep 1 sec"
+
+  if [[ "$i" -eq 60 ]]; then
+      echo "deployment ${deployment} not ready, after 3 mins"
+      exit 1
+  fi
+
+  echo "deployment ${deployment} not ready, sleep 3 sec"
+  sleep 3
 done
 
 
