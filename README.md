@@ -15,7 +15,7 @@
    * client Deployment **勿** 加上 key為`ntcu-k8s`, value為`hw2`的Label
 
 ## 繳交作業流程
-1. fork [upstream HW-02 專案](https://github.com/ogre0403/110-2-ntcu-k8s-programing-HW-02) 至自己的Github帳號的downstream HW-01專案。
+1. fork [upstream HW-02 專案](https://github.com/ogre0403/110-2-ntcu-k8s-programing-HW-02) 至自己的Github帳號的downstream HW-02專案。
 2. 依作業要求撰寫相關程式碼後，commit/push至自己Github帳號的downstream HW-02專案。
 3. 向upstream HW-02 專案的 `main` 分支發起pull request。
 4. 建立PR時，請注意下列要求。**若不符合，會導致Github自動測試失敗，而無法完成繳交。**
