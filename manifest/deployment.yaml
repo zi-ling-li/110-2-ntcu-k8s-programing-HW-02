@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: clients
+  name: newapps
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app : clients
+      app : newapps
   template:
     metadata:
       labels:
-        app : clients
+        app : newapps
     spec:
-      serviceAccountName: cm-incluster
+      serviceAccountName: dm-incluster
       containers:
-        - name: clients
+        - name: newapps
           image: zi-ling-li/incluster:latest
           imagePullPolicy: IfNotPresent
